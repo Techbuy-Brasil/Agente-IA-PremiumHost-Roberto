@@ -1,0 +1,15 @@
+# Render.com deployment config
+# https://render.com/docs/deploy-fastapi
+
+services:
+  - type: web
+    name: agente-hospedagem
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: PYTHON_VERSION
+        value: 3.12.0
+    plan: free

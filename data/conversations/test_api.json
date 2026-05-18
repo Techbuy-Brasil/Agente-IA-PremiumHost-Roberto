@@ -1,0 +1,45 @@
+{
+  "guest_id": "test_api",
+  "conversations": [
+    {
+      "timestamp": "2026-05-18T15:19:10.852119",
+      "role": "guest",
+      "message": "Farol Barra Flat 15 a 18 marco 2 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:10.900068",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Farol Barra Flat 214",
+        "checkin": "2026-03-15",
+        "checkout": "2026-03-18",
+        "guests": 2,
+        "total": 796.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:20:46.111694",
+      "role": "guest",
+      "message": "Farol Barra Flat 15 a 18 marco 2 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:46.137708",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Farol Barra Flat 214",
+        "checkin": "2026-03-15",
+        "checkout": "2026-03-18",
+        "guests": 2,
+        "total": 796.8,
+        "nights": 3
+      }
+    }
+  ],
+  "preferences": {
+    "name": "test_api",
+    "last_contact": "2026-05-18T15:20:46.076322"
+  }
+}

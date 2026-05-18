@@ -1,0 +1,77 @@
+{
+  "guest_id": "anon",
+  "conversations": [
+    {
+      "timestamp": "2026-05-18T15:11:06.728986",
+      "role": "guest",
+      "message": "3"
+    },
+    {
+      "timestamp": "2026-05-18T15:12:08.633486",
+      "role": "guest",
+      "message": "Eu quero o Smart Convenções de 20 de maio a 22 de maio para 3 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:12:19.534100",
+      "role": "guest",
+      "message": "então veja no The Plaza"
+    },
+    {
+      "timestamp": "2026-05-18T15:12:37.989744",
+      "role": "guest",
+      "message": "entra dia 20/05 e sai dia 22/05 para 3 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:12:38.012657",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "The Plaza 407",
+        "checkin": "2026-05-20",
+        "checkout": "2026-05-22",
+        "guests": 3,
+        "total": 588,
+        "nights": 2
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:13:23.398213",
+      "role": "guest",
+      "message": "o que esta incluso no farol barra flat?"
+    },
+    {
+      "timestamp": "2026-05-18T15:13:44.414779",
+      "role": "guest",
+      "message": "de 20 de maio a 22 de maio para 3 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:13:44.448011",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Farol Barra Flat 214",
+        "checkin": "2026-05-20",
+        "checkout": "2026-05-22",
+        "guests": 3,
+        "total": 648,
+        "nights": 2
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:28.327341",
+      "role": "guest",
+      "message": "Smart Convencoes dia 1 a 5 de abril, 5 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:48.022749",
+      "role": "guest",
+      "message": "Smart Convencoes dia 1 a 5 de abril, 5 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:18.550467",
+      "role": "guest",
+      "message": "Smart Convencoes dia 1 a 5 de abril, 5 pessoas"
+    }
+  ],
+  "preferences": {}
+}

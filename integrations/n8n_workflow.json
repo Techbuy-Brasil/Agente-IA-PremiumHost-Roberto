@@ -1,0 +1,82 @@
+{
+  "name": "CRM + Notificacoes - Agente Hospedagem",
+  "nodes": [
+    {
+      "name": "Webhook de Entrada",
+      "type": "n8n-nodes-base.webhook",
+      "parameters": {
+        "path": "agente-webhook",
+        "responseMode": "lastNode",
+        "options": {}
+      }
+    },
+    {
+      "name": "HTTP Request - Agente API",
+      "type": "n8n-nodes-base.httpRequest",
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.API_URL }}/chat",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            { "name": "message", "value": "={{ $json.body.message }}" },
+            { "name": "guest_name", "value": "={{ $json.body.guest_name }}" },
+            { "name": "guest_id", "value": "={{ $json.body.guest_id }}" }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "name": "If - Novo Lead",
+      "type": "n8n-nodes-base.if",
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "guest_id",
+              "leftValue": "={{ $json.guest_id }}",
+              "rightValue": "",
+              "type": "string",
+              "operator": {
+                "type": "notExists"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Google Sheets - Salvar Lead",
+      "type": "n8n-nodes-base.googleSheets",
+      "parameters": {
+        "operation": "append",
+        "documentId": "{{ $env.GOOGLE_SHEET_ID }}",
+        "sheetName": "Leads",
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "guest_id": "={{ $json.guest_id }}",
+            "name": "={{ $json.guest_name }}",
+            "message": "={{ $json.body.message }}",
+            "timestamp": "={{ $json.timestamp }}"
+          }
+        }
+      }
+    },
+    {
+      "name": "Telegram - Notificar Admin",
+      "type": "n8n-nodes-base.telegram",
+      "parameters": {
+        "chatId": "{{ $env.TELEGRAM_ADMIN_CHAT_ID }}",
+        "text": "Novo lead: {{ $json.guest_name || 'anonimo' }}\nMensagem: {{ $json.body.message }}",
+        "additionalFields": {}
+      }
+    }
+  ]
+}

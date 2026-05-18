@@ -1,0 +1,14 @@
+{
+  "guest_id": "test",
+  "conversations": [
+    {
+      "timestamp": "2026-05-18T15:27:31.659198",
+      "role": "guest",
+      "message": "teste"
+    }
+  ],
+  "preferences": {
+    "name": "test",
+    "last_contact": "2026-05-18T15:27:31.624647"
+  }
+}

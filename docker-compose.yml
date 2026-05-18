@@ -1,0 +1,87 @@
+version: "3.8"
+
+services:
+  # API do agente de hospedagem
+  agent-api:
+    build: .
+    container_name: agente-hospedagem
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./config.json:/app/config.json
+      - ./.env:/app/.env
+    environment:
+      - PORT=8000
+      - PYTHONIOENCODING=utf-8
+      - WHATSAPP_BASE_URL=http://evolution-api:8080
+      - WHATSAPP_INSTANCE=agente_hospedagem
+      - WHATSAPP_API_KEY=${WHATSAPP_API_KEY:-}
+      - API_URL=${API_URL:-http://localhost:8000}
+      - ICAL_FAROL_BARRA=${ICAL_FAROL_BARRA:-}
+      - ICAL_ONDINA=${ICAL_ONDINA:-}
+      - ICAL_THE_PLAZA=${ICAL_THE_PLAZA:-}
+      - ICAL_SMART=${ICAL_SMART:-}
+      - CRM_TYPE=${CRM_TYPE:-hubspot}
+      - CRM_API_KEY=${CRM_API_KEY:-}
+    restart: unless-stopped
+    depends_on:
+      - evolution-api
+    networks:
+      - agente-net
+
+  # Evolution API - conexao WhatsApp
+  evolution-api:
+    image: atendai/evolution-api:latest
+    container_name: evolution-whatsapp
+    ports:
+      - "8080:8080"
+    volumes:
+      - evolution_data:/evolution/instances
+    environment:
+      - SERVER_URL=http://localhost:8080
+      - AUTHENTICATION_API_KEY=${WHATSAPP_API_KEY:-agente_secret_2026}
+      - DATABASE_ENABLED=true
+      - DATABASE_CONNECTION_URI=${DATABASE_URL:-sqlite:///evolution/database.sqlite}
+      - WEBHOOK_GLOBAL_URL=${API_URL:-http://agent-api:8000}/whatsapp/webhook
+      - WEBHOOK_GLOBAL_ENABLED=true
+      - WEBHOOK_EVENTS=messages.upsert
+      - LOG_LEVEL=info
+    restart: unless-stopped
+    networks:
+      - agente-net
+
+  # (Opcional) Sincronizador iCal - roda a cada 30 min
+  ical-sync:
+    build: .
+    container_name: agente-ical-sync
+    command: python -c "
+      import asyncio, time, sys
+      sys.path.insert(0, '.')
+      from integrations.ical_sync import ICalSync
+      async def sync():
+          while True:
+              print('[iCal Sync] Sincronizando...')
+              r = await ICalSync.sync_all()
+              for k, v in r.items():
+                  print(f'  {k}: {v[\"status\"]} ({v[\"blocked_dates\"]} datas)')
+              await asyncio.sleep(1800)
+      asyncio.run(sync())
+    "
+    volumes:
+      - ./data:/app/data
+    environment:
+      - ICAL_FAROL_BARRA=${ICAL_FAROL_BARRA:-}
+      - ICAL_ONDINA=${ICAL_ONDINA:-}
+      - ICAL_THE_PLAZA=${ICAL_THE_PLAZA:-}
+      - ICAL_SMART=${ICAL_SMART:-}
+    restart: unless-stopped
+    networks:
+      - agente-net
+
+volumes:
+  evolution_data:
+
+networks:
+  agente-net:
+    driver: bridge

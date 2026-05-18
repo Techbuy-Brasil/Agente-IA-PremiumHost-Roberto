@@ -1,0 +1,25 @@
+{
+  "label": "Enviar orcamento para WhatsApp",
+  "webhook_url": "{{API_URL}}/whatsapp/webhook",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "event": "messages.upsert",
+    "data": {
+      "messages": [
+        {
+          "key": {
+            "remoteJid": "{{guest_phone}}",
+            "fromMe": false
+          },
+          "pushName": "{{guest_name}}",
+          "message": {
+            "conversation": "{{message}}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,598 @@
+{
+  "guest_id": "roberto",
+  "conversations": [
+    {
+      "timestamp": "2026-05-18T15:01:58.016768",
+      "role": "guest",
+      "message": "Quero alugar o Farol Barra Flat"
+    },
+    {
+      "timestamp": "2026-05-18T15:02:48.592819",
+      "role": "guest",
+      "message": "Quero alugar o Farol Barra Flat"
+    },
+    {
+      "timestamp": "2026-05-18T15:02:48.665061",
+      "role": "guest",
+      "message": "Quero o Farol Barra Flat do dia 15 ao dia 18 de marco para 4 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:03:29.948032",
+      "role": "guest",
+      "message": "Quero alugar o Farol Barra Flat"
+    },
+    {
+      "timestamp": "2026-05-18T15:03:30.007199",
+      "role": "guest",
+      "message": "Quero o Farol Barra Flat do dia 15 ao dia 18 de marco para 4 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:03:30.051700",
+      "role": "guest",
+      "message": "Smart Convencoes dia 10 a 13 de maio, 2 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:03:30.081972",
+      "role": "guest",
+      "message": "Ondina Apart Hotel dia 20 a 25 de janeiro, 2 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:04:06.492751",
+      "role": "guest",
+      "message": "Quero o Farol Barra Flat do dia 15 ao dia 18 de marco para 4 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:04:06.515148",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Farol Barra Flat 214",
+        "checkin": "2026-03-15",
+        "checkout": "2026-03-18",
+        "guests": 4,
+        "total": 1246.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:04:06.539833",
+      "role": "guest",
+      "message": "Smart Convencoes dia 10 a 13 de maio, 2 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:04:06.563227",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Smart Convenções 509",
+        "checkin": "2026-05-10",
+        "checkout": "2026-05-13",
+        "guests": 2,
+        "total": 636.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:04:06.586612",
+      "role": "guest",
+      "message": "Ondina Apart Hotel dia 20 a 25 de janeiro, 2 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:04:06.610010",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Ondina Apart Hotel 441",
+        "checkin": "2026-01-20",
+        "checkout": "2026-01-25",
+        "guests": 2,
+        "total": 2614.5,
+        "nights": 5
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:04:06.632950",
+      "role": "guest",
+      "message": "The Plaza 407 05/06/2026 a 08/06/2026, 3 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:04:06.655527",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "The Plaza 407",
+        "checkin": "2026-06-05",
+        "checkout": "2026-06-08",
+        "guests": 3,
+        "total": 980.55,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:04:48.786420",
+      "role": "guest",
+      "message": "Quero o Farol Barra Flat do dia 15 ao dia 18 de marco para 4 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:04:48.808668",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Farol Barra Flat 214",
+        "checkin": "2026-03-15",
+        "checkout": "2026-03-18",
+        "guests": 4,
+        "total": 1246.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:04:48.831846",
+      "role": "guest",
+      "message": "Smart Convencoes dia 10 a 13 de maio, 2 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:04:48.855062",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Smart Convenções 509",
+        "checkin": "2026-05-10",
+        "checkout": "2026-05-13",
+        "guests": 2,
+        "total": 636.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:04:48.877340",
+      "role": "guest",
+      "message": "Ondina Apart Hotel dia 20 a 25 de janeiro, 2 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:04:48.901617",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Ondina Apart Hotel 441",
+        "checkin": "2026-01-20",
+        "checkout": "2026-01-25",
+        "guests": 2,
+        "total": 2714.1,
+        "nights": 5
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:04:48.925159",
+      "role": "guest",
+      "message": "The Plaza 407 05/06/2026 a 08/06/2026, 3 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:04:48.950906",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "The Plaza 407",
+        "checkin": "2026-06-05",
+        "checkout": "2026-06-08",
+        "guests": 3,
+        "total": 1024.35,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:04:48.974321",
+      "role": "guest",
+      "message": "Smart Convencoes dia 1 a 5 de abril, 5 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:04:48.999521",
+      "role": "guest",
+      "message": "Quero alugar o The Plaza"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:09.490560",
+      "role": "guest",
+      "message": "Quero o Farol Barra Flat do dia 15 ao dia 18 de marco para 4 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:09.516938",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Farol Barra Flat 214",
+        "checkin": "2026-03-15",
+        "checkout": "2026-03-18",
+        "guests": 4,
+        "total": 1246.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:09.548152",
+      "role": "guest",
+      "message": "Smart Convencoes dia 10 a 13 de maio, 2 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:09.578019",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Smart Convenções 509",
+        "checkin": "2026-05-10",
+        "checkout": "2026-05-13",
+        "guests": 2,
+        "total": 636.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:09.608410",
+      "role": "guest",
+      "message": "Ondina Apart Hotel dia 20 a 25 de janeiro, 2 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:09.641761",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Ondina Apart Hotel 441",
+        "checkin": "2026-01-20",
+        "checkout": "2026-01-25",
+        "guests": 2,
+        "total": 2714.1,
+        "nights": 5
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:09.673631",
+      "role": "guest",
+      "message": "The Plaza 407 05/06/2026 a 08/06/2026, 3 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:09.701523",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "The Plaza 407",
+        "checkin": "2026-06-05",
+        "checkout": "2026-06-08",
+        "guests": 3,
+        "total": 1024.35,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:09.732855",
+      "role": "guest",
+      "message": "Smart Convencoes dia 1 a 5 de abril, 5 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:09.765319",
+      "role": "guest",
+      "message": "Quero alugar o The Plaza"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:24.375047",
+      "role": "guest",
+      "message": "Quero o Farol Barra Flat do dia 15 ao dia 18 de marco para 4 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:24.406041",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Farol Barra Flat 214",
+        "checkin": "2026-03-15",
+        "checkout": "2026-03-18",
+        "guests": 4,
+        "total": 1246.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:24.436103",
+      "role": "guest",
+      "message": "Smart Convencoes dia 10 a 13 de maio, 2 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:24.469441",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Smart Convenções 509",
+        "checkin": "2026-05-10",
+        "checkout": "2026-05-13",
+        "guests": 2,
+        "total": 636.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:24.503220",
+      "role": "guest",
+      "message": "Ondina Apart Hotel dia 20 a 25 de janeiro, 2 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:24.536038",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Ondina Apart Hotel 441",
+        "checkin": "2026-01-20",
+        "checkout": "2026-01-25",
+        "guests": 2,
+        "total": 2714.1,
+        "nights": 5
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:24.569137",
+      "role": "guest",
+      "message": "The Plaza 407 05/06/2026 a 08/06/2026, 3 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:24.601811",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "The Plaza 407",
+        "checkin": "2026-06-05",
+        "checkout": "2026-06-08",
+        "guests": 3,
+        "total": 1024.35,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:24.638615",
+      "role": "guest",
+      "message": "Smart Convencoes dia 1 a 5 de abril, 5 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:40.319851",
+      "role": "guest",
+      "message": "Quero o Farol Barra Flat do dia 15 ao dia 18 de marco para 4 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:40.371359",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Farol Barra Flat 214",
+        "checkin": "2026-03-15",
+        "checkout": "2026-03-18",
+        "guests": 4,
+        "total": 1246.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:40.408273",
+      "role": "guest",
+      "message": "Smart Convencoes dia 10 a 13 de maio, 2 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:40.443185",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Smart Convenções 509",
+        "checkin": "2026-05-10",
+        "checkout": "2026-05-13",
+        "guests": 2,
+        "total": 636.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:40.476181",
+      "role": "guest",
+      "message": "Ondina Apart Hotel dia 20 a 25 de janeiro, 2 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:40.529981",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Ondina Apart Hotel 441",
+        "checkin": "2026-01-20",
+        "checkout": "2026-01-25",
+        "guests": 2,
+        "total": 2714.1,
+        "nights": 5
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:40.841764",
+      "role": "guest",
+      "message": "The Plaza 407 05/06/2026 a 08/06/2026, 3 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:19:40.970474",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "The Plaza 407",
+        "checkin": "2026-06-05",
+        "checkout": "2026-06-08",
+        "guests": 3,
+        "total": 1024.35,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:19:41.187568",
+      "role": "guest",
+      "message": "Smart Convencoes dia 1 a 5 de abril, 5 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:29.520602",
+      "role": "guest",
+      "message": "Quero o Farol Barra Flat do dia 15 ao dia 18 de marco para 4 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:29.552523",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Farol Barra Flat 214",
+        "checkin": "2026-03-15",
+        "checkout": "2026-03-18",
+        "guests": 4,
+        "total": 1246.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:20:29.580736",
+      "role": "guest",
+      "message": "Smart Convencoes dia 10 a 13 de maio, 2 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:29.609880",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Smart Convenções 509",
+        "checkin": "2026-05-10",
+        "checkout": "2026-05-13",
+        "guests": 2,
+        "total": 636.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:20:29.638956",
+      "role": "guest",
+      "message": "Ondina Apart Hotel dia 20 a 25 de janeiro, 2 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:29.667785",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Ondina Apart Hotel 441",
+        "checkin": "2026-01-20",
+        "checkout": "2026-01-25",
+        "guests": 2,
+        "total": 2714.1,
+        "nights": 5
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:20:29.696314",
+      "role": "guest",
+      "message": "The Plaza 407 05/06/2026 a 08/06/2026, 3 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:29.724707",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "The Plaza 407",
+        "checkin": "2026-06-05",
+        "checkout": "2026-06-08",
+        "guests": 3,
+        "total": 1024.35,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:20:29.750190",
+      "role": "guest",
+      "message": "Smart Convencoes dia 1 a 5 de abril, 5 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:29.777773",
+      "role": "guest",
+      "message": "Quero alugar o The Plaza"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:45.721629",
+      "role": "guest",
+      "message": "Quero o Farol Barra Flat do dia 15 ao dia 18 de marco para 4 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:45.749178",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Farol Barra Flat 214",
+        "checkin": "2026-03-15",
+        "checkout": "2026-03-18",
+        "guests": 4,
+        "total": 1246.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:20:45.775632",
+      "role": "guest",
+      "message": "Smart Convencoes dia 10 a 13 de maio, 2 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:45.820107",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Smart Convenções 509",
+        "checkin": "2026-05-10",
+        "checkout": "2026-05-13",
+        "guests": 2,
+        "total": 636.8,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:20:45.851392",
+      "role": "guest",
+      "message": "Ondina Apart Hotel dia 20 a 25 de janeiro, 2 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:45.882281",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "Ondina Apart Hotel 441",
+        "checkin": "2026-01-20",
+        "checkout": "2026-01-25",
+        "guests": 2,
+        "total": 2714.1,
+        "nights": 5
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:20:45.912252",
+      "role": "guest",
+      "message": "The Plaza 407 05/06/2026 a 08/06/2026, 3 hospedes"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:45.942743",
+      "role": "agent",
+      "message": {
+        "type": "quote",
+        "property": "The Plaza 407",
+        "checkin": "2026-06-05",
+        "checkout": "2026-06-08",
+        "guests": 3,
+        "total": 1024.35,
+        "nights": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T15:20:45.973855",
+      "role": "guest",
+      "message": "Smart Convencoes dia 1 a 5 de abril, 5 pessoas"
+    },
+    {
+      "timestamp": "2026-05-18T15:20:46.002676",
+      "role": "guest",
+      "message": "Quero alugar o The Plaza"
+    }
+  ],
+  "preferences": {
+    "name": "Roberto",
+    "last_contact": "2026-05-18T15:20:45.675722"
+  }
+}
