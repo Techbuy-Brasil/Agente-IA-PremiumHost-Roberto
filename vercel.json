@@ -1,0 +1,13 @@
+{
+  "experimentalServices": {
+    "web": {
+      "routePrefix": "/_/web",
+      "buildCommand": "pip install -r requirements.txt"
+    },
+    "Agente-IA-PremiumHost-Roberto": {
+      "entrypoint": "Agente-IA-PremiumHost-Roberto",
+      "routePrefix": "/_/Agente-IA-PremiumHost-Roberto",
+      "buildCommand": "pip install -r requirements.txt"
+    }
+  }
+}
